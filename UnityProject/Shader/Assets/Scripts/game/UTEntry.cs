@@ -24,8 +24,13 @@ internal class UTProp : UTObject
 {
 	protected override void Init ()
 	{
-		Instantiate ("UTProp",
-			new Type[] { typeof(MeshFilter), typeof(MeshRenderer) }
+		Instantiate (
+			"UTProp",
+			new Type[]
+			{
+				typeof(MeshFilter),
+				typeof(MeshRenderer) 
+			}
 		);
 	}
 }
