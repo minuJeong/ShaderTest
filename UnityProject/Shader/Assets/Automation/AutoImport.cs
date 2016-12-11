@@ -73,6 +73,7 @@ public class AutoImport : Editor
 
 			// Copy file
 			File.Copy (f.FullName, dstPath, true);
+			Debug.Log (string.Format("Imported: {0}", dstPath));
 		});
 	}
 }
