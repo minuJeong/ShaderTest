@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Wall_Procedural
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 6103fcdaa3b5e46538795515f02fcd4d, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -16,9 +16,27 @@ Material:
     serializedVersion: 2
     m_TexEnvs:
     - first:
+        name: _BaseColor
+      second:
+        m_Texture: {fileID: 2800000, guid: 3996afc4be93d4481a04d341415b7bf0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BaseColorMetallic
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _BumpMap
       second:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Color_B
+      second:
+        m_Texture: {fileID: 2800000, guid: ead05a6c2033a499aa3497faa928d591, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -58,6 +76,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _Normal
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _OcclusionMap
       second:
         m_Texture: {fileID: 0}
@@ -69,7 +93,22 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SourceTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 3996afc4be93d4481a04d341415b7bf0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - first:
+        name: _BaseColorScale
+      second: 9.42
+    - first:
+        name: _BaseColor_NoiseScale
+      second: 1
+    - first:
+        name: _BaseColor_UVScale
+      second: 0.03
     - first:
         name: _BumpScale
       second: 1
@@ -83,8 +122,20 @@ Material:
         name: _DstBlend
       second: 0
     - first:
+        name: _Gap
+      second: 0.03
+    - first:
+        name: _Gloss
+      second: 0.9
+    - first:
         name: _GlossMapScale
       second: 1
+    - first:
+        name: _Gloss_A
+      second: 0
+    - first:
+        name: _Gloss_B
+      second: 0.4
     - first:
         name: _Glossiness
       second: 0.5
@@ -97,6 +148,9 @@ Material:
     - first:
         name: _Mode
       second: 0
+    - first:
+        name: _NoiseLevel
+      second: 5.86
     - first:
         name: _OcclusionStrength
       second: 1
@@ -113,15 +167,42 @@ Material:
         name: _SrcBlend
       second: 1
     - first:
+        name: _UVLevel
+      second: 1
+    - first:
         name: _UVSec
       second: 0
     - first:
         name: _ZWrite
       second: 1
+    - first:
+        name: _brickHeight
+      second: 0.0145
+    - first:
+        name: _brickWidth
+      second: 0.035
     m_Colors:
     - first:
         name: _Color
-      second: {r: 1, g: 1, b: 1, a: 1}
+      second: {r: 0.6516867, g: 0.6599467, b: 0.65977824, a: 1}
+    - first:
+        name: _Color_A
+      second: {r: 0.26790074, g: 0.3555484, b: 0.51741093, a: 1}
+    - first:
+        name: _Color_B
+      second: {r: 0.49913648, g: 0.4646482, b: 0.49001095, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _Normal_A
+      second: {r: 0.5, g: 0.5, b: 1, a: 1}
+    - first:
+        name: _Normal_B
+      second: {r: 0.5568628, g: 0.827451, b: 0.75686276, a: 1}
+    - first:
+        name: _colorBias
+      second: {r: 0.86558723, g: 0.92233634, b: 0.9874226, a: 1}
+    - first:
+        name: _node_4366
+      second: {r: 0.5, g: 0.5, b: 1, a: 1}

@@ -16,6 +16,12 @@ Material:
     serializedVersion: 2
     m_TexEnvs:
     - first:
+        name: _BaseColor
+      second:
+        m_Texture: {fileID: 2800000, guid: 9a2a50d757f3d4713b201f9387a78d52, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _BaseColorMetallic
       second:
         m_Texture: {fileID: 2800000, guid: 9a2a50d757f3d4713b201f9387a78d52, type: 3}
