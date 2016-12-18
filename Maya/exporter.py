@@ -9,7 +9,7 @@ from psd_tools import PSDImage
 
 
 # SETTINGS
-ROOT_PATH = "/Users/minuj/Documents/UnityProject/TG_Flash"
+ROOT_PATH = "/Users/minuj/Documents/UbisoftTest_2/UnityProject/Shader"
 SOURCE_PATH = "{}/Raw".format(ROOT_PATH)
 ASSET_PATH = "{}/Assets/Sources".format(ROOT_PATH)
 
@@ -74,14 +74,16 @@ def setupFBXExportProperties():
 
 
 def exportFbx(filename):
-    dirname = os.path.dirname(filename)
-    confirmDir(dirname)
+    dirpath = os.path.join(os.path.dirname(filename), "export")
+    confirmDir(dirpath)
 
     # preprocessing
     handleUsingMaterials()
 
+    outpath = os.path.join(dirpath, os.path.basename(filename))
+
     setupFBXExportProperties()
-    mel.eval("FBXExport -f \"{}\"".format(filename))
+    mel.eval("FBXExport -f \"{}\"".format(outpath))
 
 
 sceneName = cmds.file(q=True, sceneName=True)
