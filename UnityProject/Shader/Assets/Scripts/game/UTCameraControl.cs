@@ -19,6 +19,8 @@ public class UTCameraControl : MonoBehaviour
 	const KeyCode KEY_AAA = KeyCode.LeftArrow;
 	const KeyCode KEY_SIMPLE = KeyCode.RightArrow;
 
+	private Vector3 m_ViewTarget;
+
 	/// <summary>
 	/// Initialize here.
 	///  - Confirm required assets are set in editor
@@ -29,6 +31,26 @@ public class UTCameraControl : MonoBehaviour
 		Debug.Assert (m_SimpleCameraContainer != null);
 		Debug.Assert (m_AAAViewTarget != null);
 		Debug.Assert (m_SimpleViewTarget != null);
+
+		m_ViewTarget = transform.forward;
+	}
+
+	/// <summary>
+	/// Focus on AAA mode
+	/// </summary>
+	public void SetAAA ()
+	{
+		SetCamera (true);
+		m_ViewTarget = m_AAAViewTarget.transform.position - transform.position;
+	}
+
+	/// <summary>
+	/// Focus on Simple mode
+	/// </summary>
+	public void SetSimple ()
+	{
+		SetCamera (false);
+		m_ViewTarget = m_SimpleViewTarget.transform.position - transform.position;
 	}
 
 	/// <summary>
@@ -36,26 +58,18 @@ public class UTCameraControl : MonoBehaviour
 	/// </summary>
 	void Update ()
 	{
-		Vector3 viewTarget = transform.forward;
-
 		if (Input.GetKey (KEY_AAA))
 		{
-			SetCamera (true);
-
-			viewTarget = m_AAAViewTarget.transform.position - transform.position;
+			SetAAA ();
 		} else if (Input.GetKey (KEY_SIMPLE))
 		{
-			SetCamera (false);
-			viewTarget = m_SimpleViewTarget.transform.position - transform.position;
-		} else
-		{
-			viewTarget = Vector3.forward;
+			SetSimple();
 		}
 
 		transform.forward = 
-			Vector3.Lerp (transform.forward, viewTarget, Time.deltaTime * 3.0F);
-		m_AAACameraContainer.transform.forward = transform.forward;
-		m_SimpleCameraContainer.transform.forward = transform.forward;
+			Vector3.Lerp (transform.forward, m_ViewTarget, Time.deltaTime * 3.0F);
+
+		UpdateCamera ();
 	}
 
 	/// <summary>
@@ -66,5 +80,14 @@ public class UTCameraControl : MonoBehaviour
 	{
 		m_AAACameraContainer.gameObject.SetActive (isAAA);
 		m_SimpleCameraContainer.gameObject.SetActive (!isAAA);
+	}
+
+	/// <summary>
+	/// Update cameras every frame
+	/// </summary>
+	void UpdateCamera ()
+	{
+		m_AAACameraContainer.transform.forward = transform.forward;
+		m_SimpleCameraContainer.transform.forward = transform.forward;
 	}
 }

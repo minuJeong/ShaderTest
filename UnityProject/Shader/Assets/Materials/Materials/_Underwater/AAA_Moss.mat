@@ -135,7 +135,7 @@ Material:
       second: 0
     - first:
         name: _MossGrowth
-      second: -0.01
+      second: -1
     - first:
         name: _MossGrowthLevel
       second: 3.3
@@ -144,7 +144,7 @@ Material:
       second: 1
     - first:
         name: _MossGrowth_EdgeSharpness
-      second: 16.5
+      second: 1
     - first:
         name: _OcclusionStrength
       second: 1

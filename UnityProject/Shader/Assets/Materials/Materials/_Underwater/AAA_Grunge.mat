@@ -150,7 +150,7 @@ Material:
       second: 1
     - first:
         name: _GrungeAmount
-      second: 1.15
+      second: 0
     - first:
         name: _GrungeGloss
       second: 1
