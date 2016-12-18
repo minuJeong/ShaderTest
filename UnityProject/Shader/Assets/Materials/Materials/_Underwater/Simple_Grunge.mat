@@ -6,19 +6,43 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Rock_Normal
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION _NORMALMAP
-  m_LightmapFlags: 1
+  m_Name: Simple_Grunge
+  m_Shader: {fileID: 4800000, guid: 3bcf2c1e3258845818ac59b14ddbe065, type: 3}
+  m_ShaderKeywords: _EMISSION
+  m_LightmapFlags: 2
   m_CustomRenderQueue: -1
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
     - first:
+        name: _BaseColor
+      second:
+        m_Texture: {fileID: 2800000, guid: 4bd8ae6b3ede44bdaab01e0bd7e97fa5, type: 3}
+        m_Scale: {x: 8, y: 8}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BaseMG
+      second:
+        m_Texture: {fileID: 2800000, guid: 619528ac2dd26400ebc7b947f9de4de3, type: 3}
+        m_Scale: {x: 4, y: 4}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BaseMetallicMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BaseNormal
+      second:
+        m_Texture: {fileID: 2800000, guid: f62a96e06cd8141fd8d7abea56f5b850, type: 3}
+        m_Scale: {x: 8, y: 8}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _BumpMap
       second:
-        m_Texture: {fileID: 2800000, guid: 9c3e4b6f29ea84b45a2e9698efeaa7e5, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -43,13 +67,37 @@ Material:
         name: _EmissionMap
       second:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Grunge
+      second:
+        m_Texture: {fileID: 2800000, guid: d4ad498f809574513824623eeac2bef0, type: 3}
+        m_Scale: {x: 8, y: 8}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GrungeMetallicMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 95002e447918d44ec9f7b04e3784e3a8, type: 3}
         m_Scale: {x: 4, y: 4}
+        m_Offset: {x: 1, y: 1}
+    - first:
+        name: _GrungeNormal
+      second:
+        m_Texture: {fileID: 2800000, guid: fcc69844e096b416caa0d6be7320b2a3, type: 3}
+        m_Scale: {x: 8, y: 8}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _GrungeProgress
+      second:
+        m_Texture: {fileID: 2800000, guid: e537fc24423844acba0b35c1f3b1a429, type: 3}
+        m_Scale: {x: 6, y: 6}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 5c6919846686b491eb73fc41c69faebb, type: 3}
-        m_Scale: {x: 4, y: 4}
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MetallicGlossMap
@@ -71,6 +119,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
+        name: _BaseGloss
+      second: 0.8
+    - first:
+        name: _BaseMetallic
+      second: 0
+    - first:
         name: _BumpScale
       second: 1
     - first:
@@ -84,19 +138,40 @@ Material:
       second: 0
     - first:
         name: _Gloss
-      second: 0
+      second: 0.21
     - first:
         name: _GlossMapScale
       second: 1
     - first:
         name: _Glossiness
-      second: 0.09
+      second: 0.5
     - first:
         name: _GlossyReflections
       second: 1
     - first:
+        name: _GrungeAmount
+      second: 0.85
+    - first:
+        name: _GrungeGloss
+      second: 1
+    - first:
+        name: _GrungeLevel
+      second: 1.46
+    - first:
+        name: _GrungeMetallic
+      second: 0.1
+    - first:
+        name: _GrungeProgress
+      second: 0
+    - first:
         name: _Metallic
-      second: 0.07
+      second: 0.38
+    - first:
+        name: _Metallic_Base
+      second: 0.4
+    - first:
+        name: _Metallic_Grunge
+      second: 0.06
     - first:
         name: _Mode
       second: 0
@@ -123,11 +198,14 @@ Material:
       second: 1
     m_Colors:
     - first:
+        name: _BaseTint
+      second: {r: 0.90422744, g: 0.99856955, b: 0.9911233, a: 1}
+    - first:
         name: _Color
       second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
-        name: _baseColor
-      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+        name: _GrungeTint
+      second: {r: 0.22623228, g: 0.26451275, b: 0.20517156, a: 1}
