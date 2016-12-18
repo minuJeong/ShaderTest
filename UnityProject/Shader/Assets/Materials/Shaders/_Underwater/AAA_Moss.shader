@@ -3,7 +3,7 @@
 // Shader created with Shader Forge v1.30 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.30;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:5703,x:32708,y:32828,varname:node_5703,prsc:2|diff-187-OUT,normal-2601-OUT;n:type:ShaderForge.SFN_Vector4Property,id:6151,x:30667,y:33254,ptovrint:False,ptlb:MossDirection,ptin:_MossDirection,varname:node_6151,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0,v2:1,v3:0,v4:0;n:type:ShaderForge.SFN_Normalize,id:9145,x:30861,y:33244,varname:node_9145,prsc:2|IN-6151-XYZ;n:type:ShaderForge.SFN_NormalVector,id:4371,x:30861,y:33413,prsc:2,pt:False;n:type:ShaderForge.SFN_Dot,id:2314,x:31069,y:33325,varname:node_2314,prsc:2,dt:0|A-9145-OUT,B-4371-OUT;n:type:ShaderForge.SFN_Tex2d,id:8149,x:31623,y:32189,ptovrint:False,ptlb:BaseColor,ptin:_BaseColor,varname:node_8149,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:4bd8ae6b3ede44bdaab01e0bd7e97fa5,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:6064,x:31623,y:32372,ptovrint:False,ptlb:MossColor,ptin:_MossColor,varname:node_6064,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:d4ad498f809574513824623eeac2bef0,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Lerp,id:187,x:32272,y:32487,varname:node_187,prsc:2|A-8149-RGB,B-6064-RGB,T-9897-OUT;n:type:ShaderForge.SFN_Clamp01,id:9897,x:31899,y:33197,varname:node_9897,prsc:2|IN-905-OUT;n:type:ShaderForge.SFN_Slider,id:6306,x:31260,y:33037,ptovrint:False,ptlb:MossGrowth_EdgeSharpness,ptin:_MossGrowth_EdgeSharpness,varname:node_6306,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:1,cur:1,max:32;n:type:ShaderForge.SFN_Power,id:905,x:31709,y:33197,varname:node_905,prsc:2|VAL-314-OUT,EXP-6306-OUT;n:type:ShaderForge.SFN_Tex2d,id:5495,x:31623,y:32571,ptovrint:False,ptlb:BaseNormal,ptin:_BaseNormal,varname:node_5495,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:f62a96e06cd8141fd8d7abea56f5b850,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Tex2d,id:9535,x:31623,y:32752,ptovrint:False,ptlb:MossNormal,ptin:_MossNormal,varname:node_9535,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:fcc69844e096b416caa0d6be7320b2a3,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Lerp,id:2601,x:32272,y:32647,varname:node_2601,prsc:2|A-5495-RGB,B-9535-RGB,T-9897-OUT;n:type:ShaderForge.SFN_Clamp01,id:314,x:31460,y:33215,varname:node_314,prsc:2|IN-6823-OUT;n:type:ShaderForge.SFN_Add,id:6823,x:31276,y:33260,varname:node_6823,prsc:2|A-5848-OUT,B-2314-OUT,C-5578-R;n:type:ShaderForge.SFN_Slider,id:5848,x:30840,y:33141,ptovrint:False,ptlb:MossGrowth,ptin:_MossGrowth,varname:node_5848,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:-1,cur:0,max:2;n:type:ShaderForge.SFN_Tex2d,id:5578,x:31052,y:33533,ptovrint:False,ptlb:GrowthNoise,ptin:_GrowthNoise,varname:node_5578,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:e537fc24423844acba0b35c1f3b1a429,ntxv:2,isnm:False;proporder:6151-8149-6064-6306-5495-9535-5848-5578;pass:END;sub:END;*/
+/*SF_DATA;ver:1.30;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:5703,x:32708,y:32828,varname:node_5703,prsc:2|diff-187-OUT,spec-2080-OUT,normal-2601-OUT;n:type:ShaderForge.SFN_Vector4Property,id:6151,x:30667,y:33254,ptovrint:False,ptlb:MossDirection,ptin:_MossDirection,varname:node_6151,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0,v2:1,v3:0,v4:0;n:type:ShaderForge.SFN_Normalize,id:9145,x:30861,y:33244,varname:node_9145,prsc:2|IN-6151-XYZ;n:type:ShaderForge.SFN_NormalVector,id:4371,x:30861,y:33413,prsc:2,pt:False;n:type:ShaderForge.SFN_Dot,id:2314,x:31069,y:33325,varname:node_2314,prsc:2,dt:0|A-9145-OUT,B-4371-OUT;n:type:ShaderForge.SFN_Tex2d,id:8149,x:31623,y:32189,ptovrint:False,ptlb:BaseColor,ptin:_BaseColor,varname:node_8149,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:4bd8ae6b3ede44bdaab01e0bd7e97fa5,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:6064,x:31623,y:32372,ptovrint:False,ptlb:MossColor,ptin:_MossColor,varname:node_6064,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:d4ad498f809574513824623eeac2bef0,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Lerp,id:187,x:32272,y:32487,varname:node_187,prsc:2|A-8149-RGB,B-6064-RGB,T-9897-OUT;n:type:ShaderForge.SFN_Clamp01,id:9897,x:31899,y:33197,varname:node_9897,prsc:2|IN-905-OUT;n:type:ShaderForge.SFN_Slider,id:6306,x:31260,y:33037,ptovrint:False,ptlb:MossGrowth_EdgeSharpness,ptin:_MossGrowth_EdgeSharpness,varname:node_6306,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:1,cur:1,max:32;n:type:ShaderForge.SFN_Power,id:905,x:31709,y:33197,varname:node_905,prsc:2|VAL-314-OUT,EXP-6306-OUT;n:type:ShaderForge.SFN_Tex2d,id:5495,x:31623,y:32571,ptovrint:False,ptlb:BaseNormal,ptin:_BaseNormal,varname:node_5495,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:f62a96e06cd8141fd8d7abea56f5b850,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Tex2d,id:9535,x:31623,y:32752,ptovrint:False,ptlb:MossNormal,ptin:_MossNormal,varname:node_9535,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:fcc69844e096b416caa0d6be7320b2a3,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Lerp,id:2601,x:32272,y:32647,varname:node_2601,prsc:2|A-5495-RGB,B-9535-RGB,T-9897-OUT;n:type:ShaderForge.SFN_Clamp01,id:314,x:31460,y:33215,varname:node_314,prsc:2|IN-6823-OUT;n:type:ShaderForge.SFN_Add,id:6823,x:31276,y:33260,varname:node_6823,prsc:2|A-5848-OUT,B-2314-OUT,C-5578-R;n:type:ShaderForge.SFN_Slider,id:5848,x:30840,y:33141,ptovrint:False,ptlb:MossGrowth,ptin:_MossGrowth,varname:node_5848,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:-1,cur:0,max:2;n:type:ShaderForge.SFN_Tex2d,id:5578,x:31052,y:33533,ptovrint:False,ptlb:GrowthNoise,ptin:_GrowthNoise,varname:node_5578,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:e537fc24423844acba0b35c1f3b1a429,ntxv:2,isnm:False;n:type:ShaderForge.SFN_Slider,id:2080,x:32193,y:32874,ptovrint:False,ptlb:Metallic,ptin:_Metallic,varname:node_2080,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;proporder:6151-8149-6064-6306-5495-9535-5848-5578-2080;pass:END;sub:END;*/
 
 Shader "Ubitest/Underwater/AAA_Moss" {
     Properties {
@@ -15,6 +15,7 @@ Shader "Ubitest/Underwater/AAA_Moss" {
         _MossNormal ("MossNormal", 2D) = "bump" {}
         _MossGrowth ("MossGrowth", Range(-1, 2)) = 0
         _GrowthNoise ("GrowthNoise", 2D) = "black" {}
+        _Metallic ("Metallic", Range(0, 1)) = 0
     }
     SubShader {
         Tags {
@@ -34,11 +35,12 @@ Shader "Ubitest/Underwater/AAA_Moss" {
             #define UNITY_PASS_FORWARDBASE
             #include "UnityCG.cginc"
             #include "AutoLight.cginc"
+            #include "UnityPBSLighting.cginc"
+            #include "UnityStandardBRDF.cginc"
             #pragma multi_compile_fwdbase_fullshadows
             #pragma multi_compile_fog
             #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
-            uniform float4 _LightColor0;
             uniform float4 _MossDirection;
             uniform sampler2D _BaseColor; uniform float4 _BaseColor_ST;
             uniform sampler2D _MossColor; uniform float4 _MossColor_ST;
@@ -47,6 +49,7 @@ Shader "Ubitest/Underwater/AAA_Moss" {
             uniform sampler2D _MossNormal; uniform float4 _MossNormal_ST;
             uniform float _MossGrowth;
             uniform sampler2D _GrowthNoise; uniform float4 _GrowthNoise_ST;
+            uniform float _Metallic;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -86,22 +89,72 @@ Shader "Ubitest/Underwater/AAA_Moss" {
                 float node_9897 = saturate(pow(saturate((_MossGrowth+dot(normalize(_MossDirection.rgb),i.normalDir)+_GrowthNoise_var.r)),_MossGrowth_EdgeSharpness));
                 float3 normalLocal = lerp(_BaseNormal_var.rgb,_MossNormal_var.rgb,node_9897);
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
+                float3 viewReflectDirection = reflect( -viewDirection, normalDirection );
                 float3 lightDirection = normalize(_WorldSpaceLightPos0.xyz);
                 float3 lightColor = _LightColor0.rgb;
+                float3 halfDirection = normalize(viewDirection+lightDirection);
 ////// Lighting:
                 float attenuation = LIGHT_ATTENUATION(i);
                 float3 attenColor = attenuation * _LightColor0.xyz;
-/////// Diffuse:
-                float NdotL = max(0.0,dot( normalDirection, lightDirection ));
-                float3 directDiffuse = max( 0.0, NdotL) * attenColor;
-                float3 indirectDiffuse = float3(0,0,0);
-                indirectDiffuse += UNITY_LIGHTMODEL_AMBIENT.rgb; // Ambient Light
+                float Pi = 3.141592654;
+                float InvPi = 0.31830988618;
+///////// Gloss:
+                float gloss = 0.5;
+                float specPow = exp2( gloss * 10.0+1.0);
+/////// GI Data:
+                UnityLight light;
+                #ifdef LIGHTMAP_OFF
+                    light.color = lightColor;
+                    light.dir = lightDirection;
+                    light.ndotl = LambertTerm (normalDirection, light.dir);
+                #else
+                    light.color = half3(0.f, 0.f, 0.f);
+                    light.ndotl = 0.0f;
+                    light.dir = half3(0.f, 0.f, 0.f);
+                #endif
+                UnityGIInput d;
+                d.light = light;
+                d.worldPos = i.posWorld.xyz;
+                d.worldViewDir = viewDirection;
+                d.atten = attenuation;
+                Unity_GlossyEnvironmentData ugls_en_data;
+                ugls_en_data.roughness = 1.0 - gloss;
+                ugls_en_data.reflUVW = viewReflectDirection;
+                UnityGI gi = UnityGlobalIllumination(d, 1, normalDirection, ugls_en_data );
+                lightDirection = gi.light.dir;
+                lightColor = gi.light.color;
+////// Specular:
+                float NdotL = max(0, dot( normalDirection, lightDirection ));
+                float LdotH = max(0.0,dot(lightDirection, halfDirection));
+                float3 specularColor = _Metallic;
+                float specularMonochrome;
                 float4 _BaseColor_var = tex2D(_BaseColor,TRANSFORM_TEX(i.uv0, _BaseColor));
                 float4 _MossColor_var = tex2D(_MossColor,TRANSFORM_TEX(i.uv0, _MossColor));
-                float3 diffuseColor = lerp(_BaseColor_var.rgb,_MossColor_var.rgb,node_9897);
+                float3 diffuseColor = lerp(_BaseColor_var.rgb,_MossColor_var.rgb,node_9897); // Need this for specular when using metallic
+                diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, specularColor, specularColor, specularMonochrome );
+                specularMonochrome = 1.0-specularMonochrome;
+                float NdotV = max(0.0,dot( normalDirection, viewDirection ));
+                float NdotH = max(0.0,dot( normalDirection, halfDirection ));
+                float VdotH = max(0.0,dot( viewDirection, halfDirection ));
+                float visTerm = SmithJointGGXVisibilityTerm( NdotL, NdotV, 1.0-gloss );
+                float normTerm = max(0.0, GGXTerm(NdotH, 1.0-gloss));
+                float specularPBL = (NdotL*visTerm*normTerm) * (UNITY_PI / 4);
+                if (IsGammaSpace())
+                    specularPBL = sqrt(max(1e-4h, specularPBL));
+                specularPBL = max(0, specularPBL * NdotL);
+                float3 directSpecular = (floor(attenuation) * _LightColor0.xyz)*specularPBL*FresnelTerm(specularColor, LdotH);
+                float3 specular = directSpecular;
+/////// Diffuse:
+                NdotL = max(0.0,dot( normalDirection, lightDirection ));
+                half fd90 = 0.5 + 2 * LdotH * LdotH * (1-gloss);
+                float nlPow5 = Pow5(1-NdotL);
+                float nvPow5 = Pow5(1-NdotV);
+                float3 directDiffuse = ((1 +(fd90 - 1)*nlPow5) * (1 + (fd90 - 1)*nvPow5) * NdotL) * attenColor;
+                float3 indirectDiffuse = float3(0,0,0);
+                indirectDiffuse += UNITY_LIGHTMODEL_AMBIENT.rgb; // Ambient Light
                 float3 diffuse = (directDiffuse + indirectDiffuse) * diffuseColor;
 /// Final Color:
-                float3 finalColor = diffuse;
+                float3 finalColor = diffuse + specular;
                 fixed4 finalRGBA = fixed4(finalColor,1);
                 UNITY_APPLY_FOG(i.fogCoord, finalRGBA);
                 return finalRGBA;
@@ -122,11 +175,12 @@ Shader "Ubitest/Underwater/AAA_Moss" {
             #define UNITY_PASS_FORWARDADD
             #include "UnityCG.cginc"
             #include "AutoLight.cginc"
+            #include "UnityPBSLighting.cginc"
+            #include "UnityStandardBRDF.cginc"
             #pragma multi_compile_fwdadd_fullshadows
             #pragma multi_compile_fog
             #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
-            uniform float4 _LightColor0;
             uniform float4 _MossDirection;
             uniform sampler2D _BaseColor; uniform float4 _BaseColor_ST;
             uniform sampler2D _MossColor; uniform float4 _MossColor_ST;
@@ -135,6 +189,7 @@ Shader "Ubitest/Underwater/AAA_Moss" {
             uniform sampler2D _MossNormal; uniform float4 _MossNormal_ST;
             uniform float _MossGrowth;
             uniform sampler2D _GrowthNoise; uniform float4 _GrowthNoise_ST;
+            uniform float _Metallic;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -176,18 +231,45 @@ Shader "Ubitest/Underwater/AAA_Moss" {
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
                 float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.posWorld.xyz,_WorldSpaceLightPos0.w));
                 float3 lightColor = _LightColor0.rgb;
+                float3 halfDirection = normalize(viewDirection+lightDirection);
 ////// Lighting:
                 float attenuation = LIGHT_ATTENUATION(i);
                 float3 attenColor = attenuation * _LightColor0.xyz;
-/////// Diffuse:
-                float NdotL = max(0.0,dot( normalDirection, lightDirection ));
-                float3 directDiffuse = max( 0.0, NdotL) * attenColor;
+                float Pi = 3.141592654;
+                float InvPi = 0.31830988618;
+///////// Gloss:
+                float gloss = 0.5;
+                float specPow = exp2( gloss * 10.0+1.0);
+////// Specular:
+                float NdotL = max(0, dot( normalDirection, lightDirection ));
+                float LdotH = max(0.0,dot(lightDirection, halfDirection));
+                float3 specularColor = _Metallic;
+                float specularMonochrome;
                 float4 _BaseColor_var = tex2D(_BaseColor,TRANSFORM_TEX(i.uv0, _BaseColor));
                 float4 _MossColor_var = tex2D(_MossColor,TRANSFORM_TEX(i.uv0, _MossColor));
-                float3 diffuseColor = lerp(_BaseColor_var.rgb,_MossColor_var.rgb,node_9897);
+                float3 diffuseColor = lerp(_BaseColor_var.rgb,_MossColor_var.rgb,node_9897); // Need this for specular when using metallic
+                diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, specularColor, specularColor, specularMonochrome );
+                specularMonochrome = 1.0-specularMonochrome;
+                float NdotV = max(0.0,dot( normalDirection, viewDirection ));
+                float NdotH = max(0.0,dot( normalDirection, halfDirection ));
+                float VdotH = max(0.0,dot( viewDirection, halfDirection ));
+                float visTerm = SmithJointGGXVisibilityTerm( NdotL, NdotV, 1.0-gloss );
+                float normTerm = max(0.0, GGXTerm(NdotH, 1.0-gloss));
+                float specularPBL = (NdotL*visTerm*normTerm) * (UNITY_PI / 4);
+                if (IsGammaSpace())
+                    specularPBL = sqrt(max(1e-4h, specularPBL));
+                specularPBL = max(0, specularPBL * NdotL);
+                float3 directSpecular = attenColor*specularPBL*FresnelTerm(specularColor, LdotH);
+                float3 specular = directSpecular;
+/////// Diffuse:
+                NdotL = max(0.0,dot( normalDirection, lightDirection ));
+                half fd90 = 0.5 + 2 * LdotH * LdotH * (1-gloss);
+                float nlPow5 = Pow5(1-NdotL);
+                float nvPow5 = Pow5(1-NdotV);
+                float3 directDiffuse = ((1 +(fd90 - 1)*nlPow5) * (1 + (fd90 - 1)*nvPow5) * NdotL) * attenColor;
                 float3 diffuse = directDiffuse * diffuseColor;
 /// Final Color:
-                float3 finalColor = diffuse;
+                float3 finalColor = diffuse + specular;
                 fixed4 finalRGBA = fixed4(finalColor * 1,0);
                 UNITY_APPLY_FOG(i.fogCoord, finalRGBA);
                 return finalRGBA;

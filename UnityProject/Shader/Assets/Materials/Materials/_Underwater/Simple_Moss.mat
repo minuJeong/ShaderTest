@@ -135,7 +135,7 @@ Material:
       second: 0
     - first:
         name: _MossGrowth
-      second: -1
+      second: 1.47
     - first:
         name: _MossGrowthLevel
       second: 3.3
