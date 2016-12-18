@@ -78,7 +78,7 @@ Material:
     - first:
         name: _Normal
       second:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 0e906f40278834a8d9a209e513f6b94a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -132,7 +132,7 @@ Material:
       second: 1
     - first:
         name: _Gloss_A
-      second: 0
+      second: 0.01
     - first:
         name: _Gloss_B
       second: 0.4
@@ -181,6 +181,9 @@ Material:
     - first:
         name: _brickWidth
       second: 0.035
+    - first:
+        name: _noisePower
+      second: 1
     m_Colors:
     - first:
         name: _Color

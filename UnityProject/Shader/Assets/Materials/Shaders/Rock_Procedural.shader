@@ -3,18 +3,13 @@
 // Shader created with Shader Forge v1.30 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.30;sub:START;pass:START;ps:flbk:Standard,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:1755,x:32974,y:32191,varname:node_1755,prsc:2|diff-6070-RGB,spec-8995-OUT,gloss-7723-OUT,normal-3484-RGB;n:type:ShaderForge.SFN_Slider,id:8995,x:32968,y:32121,ptovrint:False,ptlb:Metallic,ptin:_Metallic,varname:_Metallic,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Code,id:4033,x:31652,y:32451,varname:node_4033,prsc:2,code:CgBmAGwAbwBhAHQAIABkAHcAIAA9ACAAZgByAGEAYwAoACgAdQB2AC4AeAAgACsAIABzAGgAaQBmAHQAKQAgAC8AIABiAHIAaQBjAGsAVwBpAGQAdABoACkAOwAKAGYAbABvAGEAdAAgAGQAaAAgAD0AIABmAHIAYQBjACgAdQB2AC4AeQAgAC8AIABiAHIAaQBjAGsASABlAGkAZwBoAHQAKQA7AAoACgByAGUAdAB1AHIAbgAgAG0AaQBuACgAZABoACwAIABkAHcAKQAgADwAIABnAGEAcAAgAD8AIAAwAC4AMAAgADoAIAAxAC4AMAA7AA==,output:0,fname:baseColor,width:490,height:486,input:1,input:0,input:0,input:0,input:0,input_1_label:uv,input_2_label:brickHeight,input_3_label:brickWidth,input_4_label:gap,input_5_label:shift|A-8821-UVOUT,B-2801-OUT,C-6846-OUT,D-6219-OUT,E-5476-OUT;n:type:ShaderForge.SFN_TexCoord,id:8821,x:31288,y:32397,varname:node_8821,prsc:2,uv:0;n:type:ShaderForge.SFN_ValueProperty,id:2801,x:31288,y:32269,ptovrint:False,ptlb:brickHeight,ptin:_brickHeight,varname:_brickHeight,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0.02;n:type:ShaderForge.SFN_ValueProperty,id:6846,x:31288,y:32185,ptovrint:False,ptlb:brickWidth,ptin:_brickWidth,varname:_brickWidth,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0.02;n:type:ShaderForge.SFN_ValueProperty,id:6219,x:31288,y:32582,ptovrint:False,ptlb:Gap,ptin:_Gap,varname:_Gap,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0.1;n:type:ShaderForge.SFN_ValueProperty,id:607,x:32343,y:32569,ptovrint:False,ptlb:Gloss_A,ptin:_Gloss_A,varname:node_607,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0;n:type:ShaderForge.SFN_ValueProperty,id:9870,x:32343,y:32645,ptovrint:False,ptlb:Gloss_B,ptin:_Gloss_B,varname:node_9870,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:1;n:type:ShaderForge.SFN_Lerp,id:7723,x:32583,y:32551,varname:node_7723,prsc:2|A-607-OUT,B-9870-OUT,T-4033-OUT;n:type:ShaderForge.SFN_Tex2d,id:6070,x:32490,y:31979,ptovrint:False,ptlb:Color_B,ptin:_Color_B,varname:node_6070,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:ead05a6c2033a499aa3497faa928d591,ntxv:0,isnm:False|UVIN-733-OUT;n:type:ShaderForge.SFN_Append,id:733,x:32179,y:32154,varname:node_733,prsc:2|A-1553-OUT,B-9137-OUT;n:type:ShaderForge.SFN_Divide,id:1553,x:31776,y:31787,varname:node_1553,prsc:2|A-1594-OUT,B-6846-OUT;n:type:ShaderForge.SFN_Divide,id:9137,x:31776,y:31929,varname:node_9137,prsc:2|A-8821-V,B-2801-OUT;n:type:ShaderForge.SFN_Code,id:5476,x:31655,y:32274,varname:node_5476,prsc:2,code:aQBmACAAKABmAHIAYQBjACgAMAAuADUAIAAqACAAdgAgAC8AIABiAHIAaQBjAGsASABlAGkAZwBoAHQAKQAgADwAIAAwAC4ANQApAAoAewAKACAAIAAgACAAcgBlAHQAdQByAG4AIABiAHIAaQBjAGsAVwBpAGQAdABoACAAKgAgADAALgA1ADsACgB9AAoAcgBlAHQAdQByAG4AIAAwAC4AMAA7AA==,output:0,fname:getShift,width:332,height:132,input:0,input:0,input:0,input_1_label:v,input_2_label:brickHeight,input_3_label:brickWidth|A-8821-V,B-2801-OUT,C-6846-OUT;n:type:ShaderForge.SFN_Add,id:1594,x:31555,y:31787,varname:node_1594,prsc:2|A-8821-U,B-5476-OUT;n:type:ShaderForge.SFN_Tex2d,id:3484,x:32490,y:32181,ptovrint:False,ptlb:Normal,ptin:_Normal,varname:node_3484,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:0e906f40278834a8d9a209e513f6b94a,ntxv:0,isnm:False|UVIN-733-OUT;proporder:6846-2801-6219-8995-607-9870-6070-3484;pass:END;sub:END;*/
+/*SF_DATA;ver:1.30;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,rfrpo:False,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:3000,x:34104,y:32643,varname:node_3000,prsc:2|diff-7484-OUT,spec-3738-OUT,gloss-4237-OUT;n:type:ShaderForge.SFN_TexCoord,id:6252,x:32579,y:32445,varname:node_6252,prsc:2,uv:0;n:type:ShaderForge.SFN_Code,id:7484,x:32914,y:32509,varname:node_7484,prsc:2,code:LwAvACAAQwBvAHAAaQBlAGQAIABjAG8AZABlACAAZgByAG8AbQAsAAoALwAvACAAIABoAHQAdABwADoALwAvAGEAYwBlAGcAaQBrAG0AbwAuAGMAbwBtAC8AcwBoAGEAZABlAHIAZgBvAHIAZwBlAC8AdwBpAGsAaQAvAGkAbgBkAGUAeAAuAHAAaABwAD8AdABpAHQAbABlAD0AUAByAG8AYwBlAGQAdQByAGEAbABfAE4AbwBpAHMAZQAKAAoAZgBsAG8AYQB0ACAAcgBlAHQAIAA9ACAAMAA7AAoAaQBuAHQAIABpAHQAZQByAGEAdABpAG8AbgBzACAAPQAgADYAOwAKAGYAbwByACAAKABpAG4AdAAgAGkAIAA9ACAAMAA7ACAAaQAgADwAIABpAHQAZQByAGEAdABpAG8AbgBzADsAIAArACsAaQApAAoAewAKACAAIAAgAGYAbABvAGEAdAAyACAAcAAgAD0AIABmAGwAbwBvAHIAKABVAFYAIAAqACAAKABpACAAKwAgADEAKQApADsACgAgACAAIABmAGwAbwBhAHQAMgAgAGYAIAA9ACAAZgByAGEAYwAoAFUAVgAgACoAIAAoAGkAIAArACAAMQApACkAOwAKACAAIAAgAGYAIAA9ACAAZgAgACoAIABmACAAKgAgACgAMwAuADAAIAAtACAAMgAuADAAIAAqACAAZgApADsACgAgACAAIABmAGwAbwBhAHQAIABuACAAPQAgAHAALgB4ACAAKwAgAHAALgB5ACAAKgAgADUANwAuADAAOwAKACAAIAAgAGYAbABvAGEAdAA0ACAAbgBvAGkAcwBlACAAPQAgAGYAbABvAGEAdAA0ACgAbgAsACAAbgAgACsAIAAxACwAIABuACAAKwAgADUANwAuADAALAAgAG4AIAArACAANQA4AC4AMAApADsACgAgACAAIABuAG8AaQBzAGUAIAA9ACAAZgByAGEAYwAoAHMAaQBuACgAbgBvAGkAcwBlACkAIAAqACAANAAzADcALgA1ADgANQA0ADUAMwApADsACgAgACAAIAByAGUAdAAgACsAPQAgAGwAZQByAHAAKABsAGUAcgBwACgAbgBvAGkAcwBlAC4AeAAsACAAbgBvAGkAcwBlAC4AeQAsACAAZgAuAHgAKQAsACAAbABlAHIAcAAoAG4AbwBpAHMAZQAuAHoALAAgAG4AbwBpAHMAZQAuAHcALAAgAGYALgB4ACkALAAgAGYALgB5ACkAIAAqACAAKABpAHQAZQByAGEAdABpAG8AbgBzACAALwAgACgAaQAgACsAIAAxACkAKQA7AAoAfQAKAHIAZQB0AHUAcgBuACAAcgBlAHQALwBpAHQAZQByAGEAdABpAG8AbgBzADsA,output:3,fname:FractionalBrwonianMotion,width:784,height:247,input:1,input_1_label:UV|A-2824-OUT;n:type:ShaderForge.SFN_Multiply,id:2824,x:32755,y:32507,varname:node_2824,prsc:2|A-6252-UVOUT,B-8601-OUT;n:type:ShaderForge.SFN_ValueProperty,id:4510,x:33015,y:32980,ptovrint:False,ptlb:Metallic_Multiply,ptin:_Metallic_Multiply,varname:node_4510,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0.1;n:type:ShaderForge.SFN_Multiply,id:3738,x:33254,y:32806,varname:node_3738,prsc:2|A-3403-OUT,B-4510-OUT;n:type:ShaderForge.SFN_ComponentMask,id:3403,x:33015,y:32806,varname:node_3403,prsc:2,cc1:0,cc2:-1,cc3:-1,cc4:-1|IN-7484-OUT;n:type:ShaderForge.SFN_ValueProperty,id:8601,x:32579,y:32626,ptovrint:False,ptlb:Freq,ptin:_Freq,varname:node_8601,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:200;n:type:ShaderForge.SFN_ValueProperty,id:587,x:33015,y:33083,ptovrint:False,ptlb:Gloss_Multiply,ptin:_Gloss_Multiply,varname:node_587,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0;n:type:ShaderForge.SFN_Multiply,id:4237,x:33254,y:32929,varname:node_4237,prsc:2|A-3403-OUT,B-587-OUT;n:type:ShaderForge.SFN_Code,id:5376,x:33254,y:33096,varname:node_5376,prsc:2,code:ZgBsAG8AYQB0ADIAIABzAGkAegBlACAAPQAgAGYAbABvAGEAdAAyACgAMgAuADAALAAgADAALgAwACkAOwAKAGYAbABvAGEAdAAzACAAbwBmAGYAIAA9ACAAZgBsAG8AYQB0ADMAKAAtADEALAAgADAALAAgADEAKQA7AAoACgBmAGwAbwBhAHQAIABzADEAMQAgAD0AIABoADsACgAKAHIAZQB0AHUAcgBuACAAZgBsAG8AYQB0ADMAKAAwACwAIAAwACwAIAAwACkAOwA=,output:2,fname:height2normal,width:413,height:223,input:0,input_1_label:h|A-3403-OUT;proporder:8601-4510-587;pass:END;sub:END;*/
 
-Shader "Ubitest/Wall_Procedural" {
+Shader "Ubitest/Rock_Procedural" {
     Properties {
-        _brickWidth ("brickWidth", Float ) = 0.02
-        _brickHeight ("brickHeight", Float ) = 0.02
-        _Gap ("Gap", Float ) = 0.1
-        _Metallic ("Metallic", Range(0, 1)) = 0
-        _Gloss_A ("Gloss_A", Float ) = 0
-        _Gloss_B ("Gloss_B", Float ) = 1
-        _Color_B ("Color_B", 2D) = "white" {}
-        _Normal ("Normal", 2D) = "white" {}
+        _Freq ("Freq", Float ) = 200
+        _Metallic_Multiply ("Metallic_Multiply", Float ) = 0.1
+        _Gloss_Multiply ("Gloss_Multiply", Float ) = 0
     }
     SubShader {
         Tags {
@@ -38,36 +33,33 @@ Shader "Ubitest/Wall_Procedural" {
             #include "UnityStandardBRDF.cginc"
             #pragma multi_compile_fwdbase_fullshadows
             #pragma multi_compile_fog
-            #pragma exclude_renderers d3d9 gles3 d3d11_9x xbox360 xboxone ps3 psp2 
+            #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
-            uniform float _Metallic;
-            float baseColor( float2 uv , float brickHeight , float brickWidth , float gap , float shift ){
+            float4 FractionalBrwonianMotion( float2 UV ){
+            // Copied code from,
+            //  http://acegikmo.com/shaderforge/wiki/index.php?title=Procedural_Noise
             
-            float dw = frac((uv.x + shift) / brickWidth);
-            float dh = frac(uv.y / brickHeight);
-            
-            return min(dh, dw) < gap ? 0.0 : 1.0;
-            }
-            
-            uniform float _brickHeight;
-            uniform float _brickWidth;
-            uniform float _Gap;
-            uniform float _Gloss_A;
-            uniform float _Gloss_B;
-            uniform sampler2D _Color_B; uniform float4 _Color_B_ST;
-            float getShift( float v , float brickHeight , float brickWidth ){
-            if (frac(0.5 * v / brickHeight) < 0.5)
+            float ret = 0;
+            int iterations = 6;
+            for (int i = 0; i < iterations; ++i)
             {
-                return brickWidth * 0.5;
+               float2 p = floor(UV * (i + 1));
+               float2 f = frac(UV * (i + 1));
+               f = f * f * (3.0 - 2.0 * f);
+               float n = p.x + p.y * 57.0;
+               float4 noise = float4(n, n + 1, n + 57.0, n + 58.0);
+               noise = frac(sin(noise) * 437.585453);
+               ret += lerp(lerp(noise.x, noise.y, f.x), lerp(noise.z, noise.w, f.x), f.y) * (iterations / (i + 1));
             }
-            return 0.0;
+            return ret/iterations;
             }
             
-            uniform sampler2D _Normal; uniform float4 _Normal_ST;
+            uniform float _Metallic_Multiply;
+            uniform float _Freq;
+            uniform float _Gloss_Multiply;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
-                float4 tangent : TANGENT;
                 float2 texcoord0 : TEXCOORD0;
             };
             struct VertexOutput {
@@ -75,17 +67,13 @@ Shader "Ubitest/Wall_Procedural" {
                 float2 uv0 : TEXCOORD0;
                 float4 posWorld : TEXCOORD1;
                 float3 normalDir : TEXCOORD2;
-                float3 tangentDir : TEXCOORD3;
-                float3 bitangentDir : TEXCOORD4;
-                LIGHTING_COORDS(5,6)
-                UNITY_FOG_COORDS(7)
+                LIGHTING_COORDS(3,4)
+                UNITY_FOG_COORDS(5)
             };
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
-                o.tangentDir = normalize( mul( unity_ObjectToWorld, float4( v.tangent.xyz, 0.0 ) ).xyz );
-                o.bitangentDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 float3 lightColor = _LightColor0.rgb;
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex );
@@ -95,13 +83,8 @@ Shader "Ubitest/Wall_Procedural" {
             }
             float4 frag(VertexOutput i) : COLOR {
                 i.normalDir = normalize(i.normalDir);
-                float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float node_5476 = getShift( i.uv0.g , _brickHeight , _brickWidth );
-                float2 node_733 = float2(((i.uv0.r+node_5476)/_brickWidth),(i.uv0.g/_brickHeight));
-                float4 _Normal_var = tex2D(_Normal,TRANSFORM_TEX(node_733, _Normal));
-                float3 normalLocal = _Normal_var.rgb;
-                float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
+                float3 normalDirection = i.normalDir;
                 float3 viewReflectDirection = reflect( -viewDirection, normalDirection );
                 float3 lightDirection = normalize(_WorldSpaceLightPos0.xyz);
                 float3 lightColor = _LightColor0.rgb;
@@ -112,7 +95,9 @@ Shader "Ubitest/Wall_Procedural" {
                 float Pi = 3.141592654;
                 float InvPi = 0.31830988618;
 ///////// Gloss:
-                float gloss = lerp(_Gloss_A,_Gloss_B,baseColor( i.uv0 , _brickHeight , _brickWidth , _Gap , node_5476 ));
+                float4 node_7484 = FractionalBrwonianMotion( (i.uv0*_Freq) );
+                float node_3403 = node_7484.r;
+                float gloss = (node_3403*_Gloss_Multiply);
                 float specPow = exp2( gloss * 10.0+1.0);
 /////// GI Data:
                 UnityLight light;
@@ -139,10 +124,9 @@ Shader "Ubitest/Wall_Procedural" {
 ////// Specular:
                 float NdotL = max(0, dot( normalDirection, lightDirection ));
                 float LdotH = max(0.0,dot(lightDirection, halfDirection));
-                float3 specularColor = _Metallic;
+                float3 specularColor = (node_3403*_Metallic_Multiply);
                 float specularMonochrome;
-                float4 _Color_B_var = tex2D(_Color_B,TRANSFORM_TEX(node_733, _Color_B));
-                float3 diffuseColor = _Color_B_var.rgb; // Need this for specular when using metallic
+                float3 diffuseColor = node_7484.rgb; // Need this for specular when using metallic
                 diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, specularColor, specularColor, specularMonochrome );
                 specularMonochrome = 1.0-specularMonochrome;
                 float NdotV = max(0.0,dot( normalDirection, viewDirection ));
@@ -191,36 +175,33 @@ Shader "Ubitest/Wall_Procedural" {
             #include "UnityStandardBRDF.cginc"
             #pragma multi_compile_fwdadd_fullshadows
             #pragma multi_compile_fog
-            #pragma exclude_renderers d3d9 gles3 d3d11_9x xbox360 xboxone ps3 psp2 
+            #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
-            uniform float _Metallic;
-            float baseColor( float2 uv , float brickHeight , float brickWidth , float gap , float shift ){
+            float4 FractionalBrwonianMotion( float2 UV ){
+            // Copied code from,
+            //  http://acegikmo.com/shaderforge/wiki/index.php?title=Procedural_Noise
             
-            float dw = frac((uv.x + shift) / brickWidth);
-            float dh = frac(uv.y / brickHeight);
-            
-            return min(dh, dw) < gap ? 0.0 : 1.0;
-            }
-            
-            uniform float _brickHeight;
-            uniform float _brickWidth;
-            uniform float _Gap;
-            uniform float _Gloss_A;
-            uniform float _Gloss_B;
-            uniform sampler2D _Color_B; uniform float4 _Color_B_ST;
-            float getShift( float v , float brickHeight , float brickWidth ){
-            if (frac(0.5 * v / brickHeight) < 0.5)
+            float ret = 0;
+            int iterations = 6;
+            for (int i = 0; i < iterations; ++i)
             {
-                return brickWidth * 0.5;
+               float2 p = floor(UV * (i + 1));
+               float2 f = frac(UV * (i + 1));
+               f = f * f * (3.0 - 2.0 * f);
+               float n = p.x + p.y * 57.0;
+               float4 noise = float4(n, n + 1, n + 57.0, n + 58.0);
+               noise = frac(sin(noise) * 437.585453);
+               ret += lerp(lerp(noise.x, noise.y, f.x), lerp(noise.z, noise.w, f.x), f.y) * (iterations / (i + 1));
             }
-            return 0.0;
+            return ret/iterations;
             }
             
-            uniform sampler2D _Normal; uniform float4 _Normal_ST;
+            uniform float _Metallic_Multiply;
+            uniform float _Freq;
+            uniform float _Gloss_Multiply;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
-                float4 tangent : TANGENT;
                 float2 texcoord0 : TEXCOORD0;
             };
             struct VertexOutput {
@@ -228,17 +209,13 @@ Shader "Ubitest/Wall_Procedural" {
                 float2 uv0 : TEXCOORD0;
                 float4 posWorld : TEXCOORD1;
                 float3 normalDir : TEXCOORD2;
-                float3 tangentDir : TEXCOORD3;
-                float3 bitangentDir : TEXCOORD4;
-                LIGHTING_COORDS(5,6)
-                UNITY_FOG_COORDS(7)
+                LIGHTING_COORDS(3,4)
+                UNITY_FOG_COORDS(5)
             };
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
-                o.tangentDir = normalize( mul( unity_ObjectToWorld, float4( v.tangent.xyz, 0.0 ) ).xyz );
-                o.bitangentDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 float3 lightColor = _LightColor0.rgb;
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex );
@@ -248,13 +225,8 @@ Shader "Ubitest/Wall_Procedural" {
             }
             float4 frag(VertexOutput i) : COLOR {
                 i.normalDir = normalize(i.normalDir);
-                float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float node_5476 = getShift( i.uv0.g , _brickHeight , _brickWidth );
-                float2 node_733 = float2(((i.uv0.r+node_5476)/_brickWidth),(i.uv0.g/_brickHeight));
-                float4 _Normal_var = tex2D(_Normal,TRANSFORM_TEX(node_733, _Normal));
-                float3 normalLocal = _Normal_var.rgb;
-                float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
+                float3 normalDirection = i.normalDir;
                 float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.posWorld.xyz,_WorldSpaceLightPos0.w));
                 float3 lightColor = _LightColor0.rgb;
                 float3 halfDirection = normalize(viewDirection+lightDirection);
@@ -264,15 +236,16 @@ Shader "Ubitest/Wall_Procedural" {
                 float Pi = 3.141592654;
                 float InvPi = 0.31830988618;
 ///////// Gloss:
-                float gloss = lerp(_Gloss_A,_Gloss_B,baseColor( i.uv0 , _brickHeight , _brickWidth , _Gap , node_5476 ));
+                float4 node_7484 = FractionalBrwonianMotion( (i.uv0*_Freq) );
+                float node_3403 = node_7484.r;
+                float gloss = (node_3403*_Gloss_Multiply);
                 float specPow = exp2( gloss * 10.0+1.0);
 ////// Specular:
                 float NdotL = max(0, dot( normalDirection, lightDirection ));
                 float LdotH = max(0.0,dot(lightDirection, halfDirection));
-                float3 specularColor = _Metallic;
+                float3 specularColor = (node_3403*_Metallic_Multiply);
                 float specularMonochrome;
-                float4 _Color_B_var = tex2D(_Color_B,TRANSFORM_TEX(node_733, _Color_B));
-                float3 diffuseColor = _Color_B_var.rgb; // Need this for specular when using metallic
+                float3 diffuseColor = node_7484.rgb; // Need this for specular when using metallic
                 diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, specularColor, specularColor, specularMonochrome );
                 specularMonochrome = 1.0-specularMonochrome;
                 float NdotV = max(0.0,dot( normalDirection, viewDirection ));
@@ -302,6 +275,6 @@ Shader "Ubitest/Wall_Procedural" {
             ENDCG
         }
     }
-    FallBack "Standard"
+    FallBack "Diffuse"
     CustomEditor "ShaderForgeMaterialInspector"
 }
